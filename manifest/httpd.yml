@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: httpd-deployment
+  namespace: httpd-ns
   labels:
     app: httpd
 spec:
@@ -24,6 +25,7 @@ spec:
 # kind: Service
 # metadata:
 #   name: httpd-service
+#   namespace: httpd-ns
 # spec:
 #   selector:
 #     app: httpd
